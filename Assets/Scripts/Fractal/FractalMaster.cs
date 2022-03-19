@@ -5,6 +5,9 @@ public class FractalMaster : MonoBehaviour {
 
     public ComputeShader fractalShader;
 
+    public int currentMandelbulb; 
+    public int currentGeneration;
+
     [Range (1, 20)]
     public float fractalPower = 10;
     public float darkness = 70;
@@ -27,6 +30,8 @@ public class FractalMaster : MonoBehaviour {
 
     void Start() {
         Application.targetFrameRate = 60;
+        currentGeneration = 0;
+        currentMandelbulb = 0;
     }
     
     void Init () {
@@ -76,5 +81,32 @@ public class FractalMaster : MonoBehaviour {
             target.enableRandomWrite = true;
             target.Create ();
         }
+    }
+
+    public void setGenParams(FractalParams fP)
+    {
+        this.blackAndWhite = fP.blackAndWhite;
+        this.blueA = fP.blueA;
+        this.blueB= fP.blueB;
+        this.redA = fP.redA;
+        this.redB= fP.redB;
+        this.greenA= fP.greenA;
+        this.greenB= fP.greenB;
+        this.fractalPower= fP.fractalPower;
+        this.darkness = fP.darkness;
+    }
+
+    public void increaseCurrentMandelbulbIdx()
+    {
+        currentMandelbulb++;
+    }
+    public void resetCurrentMandelbulbIdx()
+    {
+        currentMandelbulb = 0;
+    }
+
+    public void increaseCurrentGenerationIdx()
+    {
+        currentGeneration++;
     }
 }
