@@ -65,6 +65,8 @@ float2 SceneInfo(float3 position) {
 		// convert back to cartesian coordinates
 		z = zr*float3(sin(theta)*cos(phi), sin(phi)*sin(theta), cos(theta));
 		z+=position;
+
+     
 	}
     float dst = 0.5*log(r)*r/dr;
 	return float2(iterations,dst*1);
