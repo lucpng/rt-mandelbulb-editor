@@ -20,26 +20,11 @@ public class GameHandler : MonoBehaviour
         {
             ScreenshotHandler.TakeScreenshot_static(Screen.width - 1, Screen.height - 1);
         }
-        else if (Input.GetKeyDown(KeyCode.Keypad1))
-        {
-            triggerAlgoGen(0.2f);
-        }
-        else if (Input.GetKeyDown(KeyCode.Keypad2))
-        {
-            triggerAlgoGen(0.4f);
-        }
-        else if (Input.GetKeyDown(KeyCode.Keypad3))
-        {
-            triggerAlgoGen(0.6f);
-        }
-        else if (Input.GetKeyDown(KeyCode.Keypad4))
-        {
-            triggerAlgoGen(0.8f);
-        }
-        else if (Input.GetKeyDown(KeyCode.Keypad5))
-        {
-            triggerAlgoGen(1.0f);
-        }
+    }
+
+    public void triggerMark(float fitness)
+    {
+        triggerAlgoGen(fitness);
     }
 
     void triggerAlgoGen(float f)
