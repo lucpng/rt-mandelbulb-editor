@@ -28,7 +28,50 @@ public class FractalMaster : MonoBehaviour {
     void Start() {
         Application.targetFrameRate = 60;
     }
-    
+
+    public void setBlueA(float newValue) {
+        blueA = newValue;
+    }
+    public void setRedA(float newValue)
+    {
+        redA = newValue;
+    }
+    public void setGreenA(float newValue)
+    {
+        greenA = newValue;
+    }
+    public void setBlueB(float newValue)
+    {
+        blueB = newValue;
+    }
+    public void setRedB(float newValue)
+    {
+        redB = newValue;
+    }
+    public void setGreenB(float newValue)
+    {
+        greenB = newValue;
+    }
+    public void setFractalPower(float newValue)
+    {
+        fractalPower = newValue;
+    }
+
+    public void setDarkness(float newValue)
+    {
+        darkness = newValue;
+    }
+
+    public void setAnimationSpeed(float newSpeed)
+    {
+        powerIncreaseSpeed = newSpeed;
+    }
+
+    public void setSaturation(float newValue)
+    {
+        blackAndWhite = 1-newValue;
+    }
+
     void Init () {
         cam = Camera.current;
         directionalLight = FindObjectOfType<Light> ();
@@ -40,6 +83,8 @@ public class FractalMaster : MonoBehaviour {
             fractalPower += powerIncreaseSpeed * Time.deltaTime;
         }
     }
+
+   
 
     void OnRenderImage (RenderTexture source, RenderTexture destination) {
         Init ();
