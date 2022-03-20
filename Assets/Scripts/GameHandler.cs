@@ -10,7 +10,6 @@ public class GameHandler : MonoBehaviour
 
     void Start()
     {
-        //PC.Start();
         FM.setGenParams(PC.population[FM.currentMandelbulb].gene);
     }
 
@@ -19,6 +18,11 @@ public class GameHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ScreenshotHandler.TakeScreenshot_static(Screen.width - 1, Screen.height - 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quit");
+            Application.Quit();
         }
     }
 
