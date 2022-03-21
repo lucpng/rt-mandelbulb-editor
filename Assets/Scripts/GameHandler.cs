@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameHandler : MonoBehaviour
@@ -7,6 +5,7 @@ public class GameHandler : MonoBehaviour
     public PopulationController PC;
     public AlgoGen AG;
     public FractalMaster FM;
+    public ChangeText changingText;
 
     void Start()
     {
@@ -29,6 +28,7 @@ public class GameHandler : MonoBehaviour
     public void triggerMark(float fitness)
     {
         triggerAlgoGen(fitness);
+        changingText.UpdateText();
     }
 
     void triggerAlgoGen(float f)

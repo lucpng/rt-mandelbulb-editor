@@ -83,7 +83,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Panel
+  m_Name: Panel2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Show
@@ -126,7 +126,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 21c5459083bee5848b243e4667293ad4, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6f91a6bb8a75a1d4fbe572cc32f16e82, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -153,7 +153,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 21c5459083bee5848b243e4667293ad4, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6f91a6bb8a75a1d4fbe572cc32f16e82, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -195,7 +195,7 @@ AnimatorStateMachine:
     m_Position: {x: 230, y: 70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5654607189872745518}
-    m_Position: {x: 470, y: 150, z: 0}
+    m_Position: {x: 550, y: 150, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
